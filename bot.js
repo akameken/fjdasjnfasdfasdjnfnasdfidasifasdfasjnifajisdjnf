@@ -6,7 +6,7 @@ const yourID = "476503634411257858"; //Instructions on how to get this: https://
 const setupCMD = "#dorole"
 let initialMessage = (`** React under This Message To Activate/prove UrSelf ! **󠀀󠀀`)
 const roles = ["Activated", "", "", ""];
-const reactions = [":sure:518542858072883226", "", "", ""];
+const reactions = ["✅", "", "", ""];
 const botToken = process.env.BOT_TOKEN
 //Load up the bot... // AlphaCodes
 bot.login(botToken);
@@ -20,7 +20,7 @@ function generateMessages(){
   const gs2 = bot.emojis.find(r => r.name === 'GS2');
 
     messages.push(`** React under This Message To Activate/prove UrSelf ! **󠀀󠀀`);
-    for (let role of roles) messages.push(`React below to get the **"${role}"** role!`); //DONT CHANGE THIS // AlphaCodes لا تغير الكلام الي هنا
+    for (let role of roles) messages.push(`-`); //DONT CHANGE THIS // AlphaCodes لا تغير الكلام الي هنا
     return messages;
 }
 
